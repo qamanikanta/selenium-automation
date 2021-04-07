@@ -19,10 +19,9 @@ public class Test_ID_14_Google extends TestBase {
 
 	@Test
 	public void RR_140() throws IOException, InterruptedException {
-		src.com.core.HomePage hp = new src.com.core.HomePage(driver);
+	
 		TestBase base = new TestBase();
 		
-		logger.info(System.getProperty("user.dir"));
 		
 		logger.info("Google home page is Displayed");
 		testPassToReport("Google home page is Displayed");
