@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="hybrid-automation" duration-ms="21008" started-at="2021-04-07T16:10:01Z" finished-at="2021-04-07T16:10:22Z">
+    <groups>
+    </groups>
+    <test name="Hybrid Test Automation" duration-ms="21008" started-at="2021-04-07T16:10:01Z" finished-at="2021-04-07T16:10:22Z">
+      <class name="src.com.test.Test_ID_14_Google">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:src.com.test.Test_ID_14_Google@2d6eabae]" name="beforeSuite" is-config="true" duration-ms="313" started-at="2021-04-07T16:10:01Z" finished-at="2021-04-07T16:10:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:src.com.test.Test_ID_14_Google@2d6eabae]" name="setUp" is-config="true" duration-ms="19586" started-at="2021-04-07T16:10:01Z" finished-at="2021-04-07T16:10:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:src.com.test.Test_ID_14_Google@2d6eabae]" name="beforeMethod" is-config="true" duration-ms="7" started-at="2021-04-07T16:10:21Z" finished-at="2021-04-07T16:10:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void src.com.test.Test_ID_14_Google.RR_140() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="RR_140()[pri:0, instance:src.com.test.Test_ID_14_Google@2d6eabae]" name="RR_140" duration-ms="327" started-at="2021-04-07T16:10:21Z" finished-at="2021-04-07T16:10:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RR_140 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:src.com.test.Test_ID_14_Google@2d6eabae]" name="getResult" is-config="true" duration-ms="333" started-at="2021-04-07T16:10:21Z" finished-at="2021-04-07T16:10:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RR_140 status=SUCCESS method=Test_ID_14_Google.RR_140()[pri:0, instance:src.com.test.Test_ID_14_Google@2d6eabae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:src.com.test.Test_ID_14_Google@2d6eabae]" name="tearDown" is-config="true" duration-ms="734" started-at="2021-04-07T16:10:22Z" finished-at="2021-04-07T16:10:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:src.com.test.Test_ID_14_Google@2d6eabae]" name="endReport" is-config="true" duration-ms="372" started-at="2021-04-07T16:10:22Z" finished-at="2021-04-07T16:10:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- src.com.test.Test_ID_14_Google -->
+    </test> <!-- Hybrid Test Automation -->
+  </suite> <!-- hybrid-automation -->
+</testng-results>

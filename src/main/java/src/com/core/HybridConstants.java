@@ -2,7 +2,7 @@ package src.com.core;
 
 
 /*
- * Author  : Wan Muhammad Asyrulnizam Wan Mustaffa Kamel
+ * Author  : Manikanta
  * Description : This class contains constant element.
  * Creation Date : 26.11.2020
  * Last modification date : 08.12.2020
@@ -18,8 +18,8 @@ public class HybridConstants {
 	public static final String FILENAME = "reimb_tech_comp_Atezolizumab-TECENTRIQ-and-comparators_km2_20201030";
 	public static final String FILEPATH = DIRPATH
 			+ "\\Downloads\\reimb_tech_comp_Atezolizumab-TECENTRIQ-and-comparators_km2_20201030.xlsx";
-	public static final String ReportPath = "\\Report\\";
-	public static final String StepScreenshotPath = "\\Screenshots\\step\\";
+	public static final String ReportPath = "\\Reports\\";
+	public static final String StepScreenshotPath = "\\screenshots\\step\\";
 	public static final String EXCELFILENAME = "reimb_tech_comp_Atezolizumab-TECENTRIQ-and-comparators";
 	public static final String RegulatoryStatusOfTechnology = "reg_tech";
 	public static final String ReimbursementStatusOfTechnology = "reimb_tech";

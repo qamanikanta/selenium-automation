@@ -4,7 +4,7 @@
  	<test name="Hybrid Test Automation" >
 		<parameter name="browser" value="chrome" />
     		<classes>
-       			<class name="com.pocgear.testCases.Test_ID_14_Google"/>
+       			<class name="src.com.test.Test_ID_14_Google"/>
        		</classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->

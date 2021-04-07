@@ -1,7 +1,7 @@
 package src.com.core;
 
 /*
- * Author  : Wan Muhammad Asyrulnizam Wan Mustaffa Kamel
+ * Author  : Manikanta
  * Description : This class contains all require web elements and functionality in Page Base class.
  * Creation Date : 26.11.2020
  * Last modification date : 08.12.2020

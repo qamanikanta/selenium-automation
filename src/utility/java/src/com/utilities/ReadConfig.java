@@ -19,7 +19,7 @@ public class ReadConfig {
 	
 	public ReadConfig()
 	{
-		File source=new File("./Configuration/config.properties");
+		File source=new File("./configuration/config.properties");
 		try {
 			FileInputStream fileinputstream=new FileInputStream(source);
 			pro=new Properties();

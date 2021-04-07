@@ -1,7 +1,7 @@
 package src.com.core;
 
 /*
- * Author  : Wan Muhammad Asyrulnizam Wan Mustaffa Kamel
+ * Author  :Manikanta
  * Description : This class contains all require web elements and functionality in Home Page.
  * Creation Date : 27.11.2020
  * Last modification date : 08.12.2020
@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.pocgear.testCases.TestBase;
+import src.com.test.TestBase;
 
 public class HomePage extends TestBase{
 

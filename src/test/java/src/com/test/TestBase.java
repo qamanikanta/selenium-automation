@@ -58,7 +58,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import src.com.core.HybridConstants;
 import src.com.core.PageBase;
-import src.com.utilities.EncryptPassword;
+//import src.com.utilities.EncryptPassword;
 import src.com.utilities.ReadConfig;
 import src.com.utilities.XLUtils;
 
@@ -69,7 +69,7 @@ public class TestBase {
 	private static final By By = null;
 
 	ReadConfig readconfig = new ReadConfig();
-	EncryptPassword encyt=new EncryptPassword();
+	//EncryptPassword encyt=new EncryptPassword();
 	
 	public String baseURL = readconfig.getApplicationURL();
 	public String usernameDecrypt = readconfig.getprojectLeadUserName();
@@ -79,11 +79,11 @@ public class TestBase {
 	public String username_Approvar = readconfig.getApprovarUserName();
 	public String password = readconfig.getPassword();
 
-	String projectLead_UsernameDecrypt=encyt.decrypt(username_ProjectLead);
+	/*String projectLead_UsernameDecrypt=encyt.decrypt(username_ProjectLead);
 	String datEntry_UsernameDecrypt=encyt.decrypt(username_DataEntry);
 	String reviewer_UsernameDecrypt=encyt.decrypt(username_Reviewer);
 	String approvar_UsernameDecrypt=encyt.decrypt(username_Approvar);
-	String passwordDecrypt = encyt.decrypt(password);	
+	String passwordDecrypt = encyt.decrypt(password);*/	
 	public static WebDriver driver;
 	PageBase pbase = new PageBase(driver);
 	private String destfile;
@@ -127,9 +127,9 @@ public class TestBase {
 		extent.setSystemInfo("user", "Mani");
 
 		htmlReporter.config().setChartVisibilityOnOpen(true);
-		htmlReporter.config().setDocumentTitle("HEIDI Test Automation Project");// Title of report
+		htmlReporter.config().setDocumentTitle("Hybrid Test Automation Project");// Title of report
 		htmlReporter.config().setEncoding("utf-8");
-		htmlReporter.config().setReportName("HEIDI Test Automation Report");// name of the report
+		htmlReporter.config().setReportName("Hybrid Test Automation Report");// name of the report
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);// location of the chart
 		htmlReporter.config().setTheme(Theme.DARK);
 
@@ -203,7 +203,7 @@ public class TestBase {
 	public void tearDown() {
 		// Close the browser window that the driver has been focused.
 		if (driver != null) {
-			//driver.quit();
+			driver.quit();
 
 		}
 	}
@@ -221,7 +221,7 @@ public class TestBase {
 			TakesScreenshot screen = (TakesScreenshot) driver;
 			File source = screen.getScreenshotAs(OutputType.FILE);
 			String timeStamp = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());// time stamp
-			String destfile = HybridConstants.USERDIR + "\\Screenshots\\" + path + "\\" + testcasename + "-"
+			String destfile = HybridConstants.USERDIR + "\\screenshots\\" + path + "\\" + testcasename + "-"
 					+ timeStamp + ".png";
 			File target = new File(destfile);
 			FileUtils.copyFile(source, target);
@@ -238,7 +238,7 @@ public class TestBase {
 		pbase.closeFeedbackWindow();
 		pbase.setUserName(usernameDecrypt);
 		logger.info("user name provided");
-		pbase.setPassword(passwordDecrypt);
+		//pbase.setPassword(passwordDecrypt);
 		logger.info("password provided");
 		pbase.clickLogin();
 		logger.info("logged in");
@@ -250,7 +250,7 @@ public class TestBase {
 	public void login1() {
 		pbase.setUserName(usernameDecrypt);
 		logger.info("user name provided");
-		pbase.setPassword(passwordDecrypt);
+		//pbase.setPassword(passwordDecrypt);
 		logger.info("password provided");
 		pbase.clickLogin();
 		logger.info("logged in");
@@ -261,7 +261,7 @@ public class TestBase {
 	public void heidilogin_ProjectLead() {
 		pbase.setHeidiUserName(username_ProjectLead);
 		logger.info("user name provided");
-		pbase.setHeidiPassword(passwordDecrypt);
+		//pbase.setHeidiPassword(passwordDecrypt);
 		logger.info("password provided");
 		pbase.clickHeidiLogin();
 		logger.info("logged in");
@@ -270,9 +270,9 @@ public class TestBase {
 	
 	/* This method is to login HEIDI application */
 	public void heidilogin_Reviewer() {
-		pbase.setHeidiUserName(reviewer_UsernameDecrypt);
+		//pbase.setHeidiUserName(reviewer_UsernameDecrypt);
 		logger.info("Reviewer user name provided");
-		pbase.setHeidiPassword(passwordDecrypt);
+		//pbase.setHeidiPassword(passwordDecrypt);
 		logger.info("Reviewer password provided");
 		pbase.clickHeidiLogin();
 		logger.info("logged in");
@@ -281,9 +281,9 @@ public class TestBase {
 	
 	/* This method is to login HEIDI application */
 	public void heidilogin_DataEntryUser() {
-		pbase.setHeidiUserName(datEntry_UsernameDecrypt);
+		//pbase.setHeidiUserName(datEntry_UsernameDecrypt);
 		logger.info("Data Entry user name provided");
-		pbase.setHeidiPassword(passwordDecrypt);
+		//pbase.setHeidiPassword(passwordDecrypt);
 		logger.info("Data Entry password provided");
 		pbase.clickHeidiLogin();
 		logger.info("logged in");

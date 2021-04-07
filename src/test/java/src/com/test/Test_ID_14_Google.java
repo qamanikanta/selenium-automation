@@ -1,7 +1,7 @@
 package src.com.test;
 
 /*
- * Author  : Wan Muhammad Asyrulnizam Wan Mustaffa Kamel
+ * Author  : Manikanta
  * Description : This class contains all steps and functionality in this test case.
  * Creation Date : 18.12.2020
  * Last modification date : 24.12.2020
@@ -22,6 +22,7 @@ public class Test_ID_14_Google extends TestBase {
 		src.com.core.HomePage hp = new src.com.core.HomePage(driver);
 		TestBase base = new TestBase();
 		
+		logger.info(System.getProperty("user.dir"));
 		
 		logger.info("Google home page is Displayed");
 		testPassToReport("Google home page is Displayed");
