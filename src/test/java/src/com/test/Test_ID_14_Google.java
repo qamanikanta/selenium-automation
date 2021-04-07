@@ -1,4 +1,3 @@
-package src.com.test;
 
 /*
  * Author  : Manikanta
@@ -6,13 +5,11 @@ package src.com.test;
  * Creation Date : 18.12.2020
  * Last modification date : 24.12.2020
  */
-
-
+package src.com.test;
+import src.com.utilities.XLUtils;
 import java.io.IOException;
-
 import org.testng.annotations.Test;
 
-import src.com.utilities.XLUtils;
 
 
 public class Test_ID_14_Google extends TestBase {
@@ -20,8 +17,6 @@ public class Test_ID_14_Google extends TestBase {
 	@Test
 	public void RR_140() throws IOException, InterruptedException {
 	
-		TestBase base = new TestBase();
-		
 		
 		logger.info("Google home page is Displayed");
 		testPassToReport("Google home page is Displayed");

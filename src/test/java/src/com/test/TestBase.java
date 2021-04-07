@@ -1,4 +1,4 @@
-package src.com.test;
+
 /**
  * This class for find content related Operations
  * 
@@ -7,6 +7,12 @@ package src.com.test;
  *
  */
 
+package src.com.test;
+import src.com.core.HybridConstants;
+import src.com.core.PageBase;
+//import src.com.utilities.EncryptPassword;
+import src.com.utilities.ReadConfig;
+import src.com.utilities.XLUtils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -56,11 +62,6 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-import src.com.core.HybridConstants;
-import src.com.core.PageBase;
-//import src.com.utilities.EncryptPassword;
-import src.com.utilities.ReadConfig;
-import src.com.utilities.XLUtils;
 
 public class TestBase {
 
