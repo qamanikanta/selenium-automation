@@ -19,7 +19,7 @@ public class Test_ID_14_Google extends TestBase {
 	@Test
 	public void RR_140() throws IOException, InterruptedException {
 	
-		
+		logger.info("Test started");
 		logger.info("Google home page is Displayed");
 		testPassToReport("Google home page is Displayed");
 		String step1 = XLUtils.takeScreenshot_Step("Step1", reportsPathStep);
